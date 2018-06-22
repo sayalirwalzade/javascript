@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Location</title>
+</head>
+<body>
+    <h1>Location Refrence</h1>
+    <button onclick="display()">Display Location</button>
+    <button onclick="copy1()">copy1</button>
+    <p id="displayLoc"></p>
+    <p id="display"></p>
+    <script>
+        function display()
+        {
+           // document.getElementById('dispalyLoc').innerHTML=window.location.href;
+           // document.getElementById('displayLoc').innerHTML=window.location.hostname;
+           var str1= document.getElementById('displayLoc').innerHTML=window.location.port;
+            document.getElementById('displayLoc').innerHTML=str1.slice(1);
+         //  var str= document.getElementById('displayLoc').innerHTML=window.location.pathname;
+           // document.getElementById('displayLoc').innerHTML=str.slice(2);
+        }
+        function copy1()
+        {
+            document.writeln("<h1>hello</h1>");
+        }
+    </script>
+</body>
+</html>
